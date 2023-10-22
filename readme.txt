@@ -21,8 +21,13 @@
 
 
 # macbook pro cam
-    ## use index 1:
+    ## use index 0 for macbook pro 2016 (no vm installed):
+        cap = cv2.VideoCapture(0)
+
+    ## try to use index 1 for macbook pro which have Virtual Machine installed:
         cap = cv2.VideoCapture(1)
+
+    ## must reboot macbook after changed setting to allow terminal accessing camera
 
 
 # run detection from terminal
