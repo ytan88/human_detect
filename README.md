@@ -7,7 +7,7 @@ use tensorflow to detect person in camera frame of macbook
         $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         $ brew install python
 
-    ## create python virtual env:
+    ## create python virtual env in project root (folder that contains human_detection_v1.py):
         $ python3 -m pip install --user virtualenv
         $ python3 -m venv env
         $ source env/bin/activate
