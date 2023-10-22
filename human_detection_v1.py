@@ -2,6 +2,14 @@ import cv2
 import tensorflow as tf
 import numpy as np
 
+gpus = tf.config.experimental.list_physical_devices('GPU')
+if gpus:
+    try:
+        for gpu in gpus:
+            tf.config.experimental.set_memory_growth(gpu, True)
+    except RuntimeError as e:
+        print(e)
+
 # Load the TensorFlow model
 # https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md
 model_path = './ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8/saved_model'
