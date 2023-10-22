@@ -1,16 +1,16 @@
 
 # setup env
     ## python3 is needed:
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-        brew install python
+        $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        $ brew install python
 
-    ## create python virtual env:
-        python3 -m pip install --user virtualenv
-        python3 -m venv env
-        source env/bin/activate
+    ## create python virtual env in project root (folder that contains human_detection_v1.py):
+        $ python3 -m pip install --user virtualenv
+        $ python3 -m venv env
+        $ source env/bin/activate
 
     ## install required packages:
-        pip install tensorflow opencv-python-headless numpy
+        $ pip install tensorflow opencv-python-headless numpy
 
     ## download model to project root:
         $ curl -L -o ssd_mobilenet_v2.tar.gz http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8.tar.gz
@@ -26,4 +26,4 @@
 
 
 # run detection from terminal
-    python human_detection_v2_printCord.py
+    $ python human_detection_v2_printCord.py
