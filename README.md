@@ -3,7 +3,7 @@ use tensorflow to detect person in camera frame of macbook
 
 
 # setup env
-    ## python3 is needed:
+## python3 is needed:
         $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         $ brew install python
 
