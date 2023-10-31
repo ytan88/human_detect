@@ -35,7 +35,7 @@ def draw_rectangles(frame, boxes, scores, classes):
     return frame
 
 def main():
-    cap = cv2.VideoCapture(1)  # Use 1 or the index of your camera
+    cap = cv2.VideoCapture(0)  # Use 1 or the index of your camera
 
     while cap.isOpened():
         ret, frame = cap.read()
