@@ -38,7 +38,7 @@ def draw_rectangles_and_collect_coords(frame, boxes, scores, classes):
     return frame, coords  # Return both frame and coordinates
 
 def main():
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     last_time = 0  # Initialize a variable to store the last time coordinates were printed
 
     while cap.isOpened():
